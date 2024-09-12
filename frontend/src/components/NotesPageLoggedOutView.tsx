@@ -21,6 +21,7 @@ const NotesPageLoggedOutView = () => {
                         <li>Hashing passwords</li>
                         <li>Creating reusable web app components</li>
                     </ul>
+                    <p>-Kyle Phillips<br/>September 2024</p>
                 </Card.Text>
             </Card.Body>
         </Card>
