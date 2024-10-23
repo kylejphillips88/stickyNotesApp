@@ -17,11 +17,17 @@ const NavBar = ({loggedInUser, onSignUpClicked, onLoginClicked, onLogoutSuccessf
         <Navbar bg="primary" variant="dark" expand="sm" sticky="top">
             <Container>
                 <Navbar.Brand as={Link} to="/">
-                    Sticky Notes App
+                    Kyle Phillips Portfolio
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="main-navbar" />
                 <Navbar.Collapse id="main-navbar">
                     <Nav>
+                        <Nav.Link as={Link} to="paintings">
+                            Paintings
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="workhistory">
+                            Work History
+                        </Nav.Link>
                         <Nav.Link as={Link} to="privacy">
                             Privacy
                         </Nav.Link>

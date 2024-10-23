@@ -1,4 +1,5 @@
-import { Button } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
+import DropdownItem from "react-bootstrap/esm/DropdownItem";
 
 interface NavBarLoggedOutViewProps {
     onSignUpClicked: () => void,
@@ -7,10 +8,15 @@ interface NavBarLoggedOutViewProps {
 
 const NavBarLoggedOutView = ({onSignUpClicked, onLoginClicked} : NavBarLoggedOutViewProps) => {
     return ( 
-        <>
-            <Button onClick={onSignUpClicked}>Sign Up</Button>
-            <Button onClick={onLoginClicked}>Log In</Button>
-        </>
+        <Dropdown>
+            <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                Sticky Notes
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+                <DropdownItem onClick={onSignUpClicked}>Sign Up</DropdownItem>
+                <DropdownItem onClick={onLoginClicked}>Log In</DropdownItem>
+            </Dropdown.Menu>
+        </Dropdown>
      );
 }
  

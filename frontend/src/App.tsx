@@ -10,6 +10,8 @@ import { Container } from 'react-bootstrap';
 import PrivacyPage from './pages/PrivacyPage';
 import NotFoundPage from './pages/NotFoundPage';
 import styles from "./styles/App.module.css";
+import PaintingsPage from './pages/PaintingsPage';
+import WorkHistoryPage from './pages/WorkHistoryPage';
 
 function App() {
 
@@ -47,6 +49,14 @@ function App() {
           <Route
           path='/privacy'
           element={<PrivacyPage/>}
+          />
+          <Route
+          path='/paintings'
+          element={<PaintingsPage/>}
+          />
+          <Route
+          path='/workhistory'
+          element={<WorkHistoryPage/>}
           />
           <Route
           path='/*'
