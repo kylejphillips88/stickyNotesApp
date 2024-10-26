@@ -50,10 +50,10 @@ function App() {
           path='/privacy'
           element={<PrivacyPage/>}
           />
-          <Route
+          {/*<Route
           path='/paintings'
           element={<PaintingsPage/>}
-          />
+          />*/}
           <Route
           path='/workhistory'
           element={<WorkHistoryPage/>}
